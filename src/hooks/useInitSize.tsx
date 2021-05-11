@@ -13,5 +13,5 @@ export const useInitSize = () => {
     contentRef.current!.style.height = appHeight + 'px'
     contentRef.current!.style.marginTop = (clientHeight - appHeight) / 2 + 'px'
   })
-  return (props: {children: ReactChild}) => <div className={ 'content' } ref={contentRef}>{props.children}</div>
+  return (props: {children: ReactChild}) => <div className={ 'contentWrapper' } ref={contentRef}>{props.children}</div>
 }

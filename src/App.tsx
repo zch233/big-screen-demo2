@@ -7,7 +7,16 @@ function App() {
   return (
     <div className="App">
       <Wrapper>
-        123213213213.log
+        <>
+          <div className={'content-main'}>
+            <section className={'section1'}>1</section>
+            <section className={'section2'}>2</section>
+            <section className={'section3'}>3</section>
+            <section className={'section4'}>4</section>
+            <section className={'section5'}>5</section>
+          </div>
+          <div className={'content-footer'}>2222</div>
+        </>
       </Wrapper>
     </div>
   )
