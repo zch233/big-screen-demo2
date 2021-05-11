@@ -1,3 +1,7 @@
+@function px ($size) {
+  @return $size / 2420 * 100rem
+}
+
 .App {
   display: flex;
   align-items: center;
@@ -8,30 +12,33 @@
     display: flex;
     flex-direction: column;
   }
+  .content-header {
+    img {width: 100%;}
+  }
   .content-main {
     flex: 1;
     display: grid;
+    padding: px(20) 0;
     grid-template: "box1 box2 box4 box5" 755fr
     "box3 box3 box4 box5" 363fr / 366fr 361fr 811fr 747fr;
+    grid-gap: px(28);
+    .border {
+      border: 1px solid #ddd;
+    }
     .section1 {
       grid-area: box1;
-      background-color: antiquewhite;
     }
     .section2 {
       grid-area: box2;
-      background-color: aqua;
     }
     .section3 {
       grid-area: box3;
-      background-color: #2b5a5a;
     }
     .section4 {
       grid-area: box4;
-      background-color: #00ff2a;
     }
     .section5 {
       grid-area: box5;
-      background-color: #6200ff;
     }
   }
   .content-footer {}
