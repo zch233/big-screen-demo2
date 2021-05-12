@@ -7,6 +7,7 @@ import { Chart2 } from './pages/Chart2';
 import { Chart3 } from './pages/Chart3';
 import { Chart4 } from './pages/Chart4';
 import { Chart5 } from './pages/Chart5';
+import { Chart14 } from './pages/Chart14';
 
 function App() {
   const Wrapper = useInitSize()
@@ -59,6 +60,7 @@ function App() {
               </div>
               <div className="border section-chart section5-chart3">
                 <div className="section-title"><h2>作案手段分析</h2></div>
+                <Chart14 />
               </div>
             </section>
           </div>

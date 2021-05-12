@@ -1,6 +1,7 @@
 @function px ($size) {
   @return $size / 2420 * 100rem
 }
+img {vertical-align: middle;}
 body {background-color: #00020b;}
 .App {
   display: flex;
@@ -29,6 +30,7 @@ body {background-color: #00020b;}
       box-shadow: 0 0 2px 0 #0e325f, inset 0 0 2px 0 #0e325f;
       &::before {
         content: '';
+        pointer-events: none;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -114,10 +116,10 @@ body {background-color: #00020b;}
       }
     }
     .tableChart1, .tableChart2 {
-      padding: 0 px(24);
+      padding: px(24);
+      text-align: center;
       > table {
         width: 100%; table-layout: fixed;
-        margin-top: px(25);
         border-collapse: collapse;
         th, td {
           border: 1px solid #1a3671;
