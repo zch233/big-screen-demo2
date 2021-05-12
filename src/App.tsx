@@ -3,6 +3,7 @@ import './App.scss'
 import { useInitSize } from './hooks/useInitSize';
 import header from './assets/header.9d7a7634.png'
 import { Chart1 } from './pages/Chart1';
+import { Chart2 } from './pages/Chart2';
 
 function App() {
   const Wrapper = useInitSize()
@@ -20,7 +21,8 @@ function App() {
                 <Chart1 />
               </div>
               <div className="border section-chart section1-chart2">
-                <div className="section-title"><h2>案发派出所管辖统计</h2></div>
+                <div className="section-title"><h2>案件破获排名</h2></div>
+                <Chart2 />
               </div>
             </section>
             <section className={'section section2'}>
