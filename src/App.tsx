@@ -4,6 +4,7 @@ import { useInitSize } from './hooks/useInitSize';
 import header from './assets/header.9d7a7634.png'
 import { Chart1 } from './pages/Chart1';
 import { Chart2 } from './pages/Chart2';
+import { Chart3 } from './pages/Chart3';
 
 function App() {
   const Wrapper = useInitSize()
@@ -28,6 +29,7 @@ function App() {
             <section className={'section section2'}>
               <div className="border section-chart section2-chart1">
                 <div className="section-title"><h2>发案趋势分析</h2></div>
+                <Chart3 />
               </div>
               <div className="border section-chart section2-chart2">
                 <div className="section-title"><h2>案发时段分析</h2></div>
