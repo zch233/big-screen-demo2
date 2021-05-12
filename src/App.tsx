@@ -6,6 +6,7 @@ import { Chart1 } from './pages/Chart1';
 import { Chart2 } from './pages/Chart2';
 import { Chart3 } from './pages/Chart3';
 import { Chart4 } from './pages/Chart4';
+import { Chart5 } from './pages/Chart5';
 
 function App() {
   const Wrapper = useInitSize()
@@ -39,6 +40,7 @@ function App() {
             </section>
             <section className={'border section section3 section-chart'}>
               <div className="section-title"><h2>往年战果数对比</h2></div>
+              <Chart5 />
             </section>
             <section className={'section section4'}>
               <div className="border section-chart section4-chart1">
