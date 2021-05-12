@@ -5,6 +5,7 @@ import header from './assets/header.9d7a7634.png'
 import { Chart1 } from './pages/Chart1';
 import { Chart2 } from './pages/Chart2';
 import { Chart3 } from './pages/Chart3';
+import { Chart4 } from './pages/Chart4';
 
 function App() {
   const Wrapper = useInitSize()
@@ -33,6 +34,7 @@ function App() {
               </div>
               <div className="border section-chart section2-chart2">
                 <div className="section-title"><h2>案发时段分析</h2></div>
+                <Chart4 />
               </div>
             </section>
             <section className={'border section section3 section-chart'}>
