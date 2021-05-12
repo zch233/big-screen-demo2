@@ -1,7 +1,7 @@
 @function px ($size) {
   @return $size / 2420 * 100rem
 }
-
+body {background-color: #00020b;}
 .App {
   display: flex;
   align-items: center;
@@ -49,6 +49,7 @@
       background: #0f113a;
       margin: -1px 0;
       min-width: 60%;
+      flex-shrink: 0;
       h2 {
         transform: scale(.6);
         white-space: nowrap;
@@ -63,7 +64,7 @@
     .section1 {
       grid-area: box1;
       &-chart1 {
-        height: 40%;
+        height: px(315);
         margin-bottom: px(18);
       }
       &-chart2 {
