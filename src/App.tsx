@@ -10,6 +10,8 @@ import { Chart5 } from './pages/Chart5';
 import { Chart14 } from './pages/Chart14';
 import { Chart12 } from './pages/Chart12';
 import { Chart13 } from './pages/Chart13';
+import { Chart11 } from './pages/Chart11';
+import { Chart10 } from './pages/Chart10';
 
 function App() {
   const Wrapper = useInitSize()
@@ -56,6 +58,10 @@ function App() {
             <section className={'section section5'}>
               <div className="border section-chart section5-chart1">
                 <div className="section-title"><h2>案发类型统计</h2></div>
+                <div style={{flex: 1, display: 'flex', width: '100%'}}>
+                  <Chart10 />
+                  <Chart11 />
+                </div>
               </div>
               <div className="border section-chart section5-chart2">
                 <div className="section-title"><h2>案发街道统计</h2></div>
