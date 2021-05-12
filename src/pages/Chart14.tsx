@@ -13,10 +13,10 @@ export const Chart14 = () => {
         </thead>
         <tbody>
           <tr>
-            <td rowSpan={4}>入室盗窃</td>
+            <td rowSpan={3}>入室盗窃</td>
             <td>翻窗入室</td>
             <td>10</td>
-            <td rowSpan={4}>80</td>
+            <td rowSpan={3}>50</td>
           </tr>
           <tr>
             <td>撬门入室</td>
@@ -25,10 +25,6 @@ export const Chart14 = () => {
           <tr>
             <td>技术开锁</td>
             <td>20</td>
-          </tr>
-          <tr>
-            <td>撬防护栏</td>
-            <td>30</td>
           </tr>
           <tr>
             <td rowSpan={2}>抢夺</td>

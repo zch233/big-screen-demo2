@@ -8,6 +8,8 @@ import { Chart3 } from './pages/Chart3';
 import { Chart4 } from './pages/Chart4';
 import { Chart5 } from './pages/Chart5';
 import { Chart14 } from './pages/Chart14';
+import { Chart12 } from './pages/Chart12';
+import { Chart13 } from './pages/Chart13';
 
 function App() {
   const Wrapper = useInitSize()
@@ -57,6 +59,10 @@ function App() {
               </div>
               <div className="border section-chart section5-chart2">
                 <div className="section-title"><h2>案发街道统计</h2></div>
+                <div style={{flex: 1, display: 'flex', width: '100%'}}>
+                  <Chart12 />
+                  <Chart13 />
+                </div>
               </div>
               <div className="border section-chart section5-chart3">
                 <div className="section-title"><h2>作案手段分析</h2></div>

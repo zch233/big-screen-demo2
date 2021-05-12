@@ -104,8 +104,10 @@ body {background-color: #00020b;}
       &-chart1 {
         height: 28%;
         margin-bottom: px(14);
+        flex-shrink: 0;
       }
       &-chart2 {
+        flex-shrink: 0;
         height: 28%;
         margin-top: px(14);
         margin-bottom: px(14);
@@ -116,6 +118,7 @@ body {background-color: #00020b;}
       }
     }
     .tableChart1, .tableChart2 {
+      font-size: px(12);
       padding: px(24);
       text-align: center;
       > table {
