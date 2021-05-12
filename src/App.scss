@@ -18,7 +18,7 @@
   .content-main {
     flex: 1;
     display: grid;
-    padding: px(20) px(4);
+    padding: px(20) px(4) 0;
     grid-template: "box1 box2 box4 box5" 755fr
     "box3 box3 box4 box5" 363fr / 366fr 361fr 811fr 747fr;
     grid-gap: px(28);
@@ -113,5 +113,12 @@
       }
     }
   }
-  .content-footer {}
+  .content-footer {
+    padding: .4em 0;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {color: inherit;}
+  }
 }

@@ -52,7 +52,7 @@ function App() {
               </div>
             </section>
           </div>
-          <div className={'content-footer'}>2222</div>
+          <div className={'content-footer'}><a href="https://github.com/zch233/big-screen-demo2" target={'_blank'}>github/@zch233</a></div>
         </>
       </Wrapper>
     </div>
