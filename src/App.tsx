@@ -12,6 +12,9 @@ import { Chart12 } from './pages/Chart12';
 import { Chart13 } from './pages/Chart13';
 import { Chart11 } from './pages/Chart11';
 import { Chart10 } from './pages/Chart10';
+import { Chart9 } from './pages/Chart9';
+import { Chart8 } from './pages/Chart8';
+import { Chart7 } from './pages/Chart7';
 
 function App() {
   const Wrapper = useInitSize()
@@ -53,6 +56,11 @@ function App() {
               </div>
               <div className="border section-chart section4-chart2">
                 <div className="section-title"><h2>犯罪人员年龄段分布</h2></div>
+                <div style={{flex: 1, display: 'flex', width: '100%'}}>
+                  <Chart7 />
+                  <Chart8 />
+                  <Chart9 />
+                </div>
               </div>
             </section>
             <section className={'section section5'}>

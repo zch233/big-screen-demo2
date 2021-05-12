@@ -20,7 +20,7 @@ export const useCharts = (props: {options: ECBasicOption}) => {
         color: '#79839e',
       },
       grid: {
-        x: px(50),
+        x: px(40),
         y: px(40),
         x2: px(10),
         y2: px(50),
