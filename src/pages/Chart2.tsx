@@ -35,6 +35,14 @@ export const Chart2 = () => {
     }
   })
   return useCharts({options: {
+      legend: {
+        show: true,
+        bottom: px(10),
+        right: px(10),
+        textStyle: {color: 'white'},
+        itemWidth: px(30),
+        itemHeight: px(16)
+      },
       grid: {
         x: px(70),
         y: px(40),
