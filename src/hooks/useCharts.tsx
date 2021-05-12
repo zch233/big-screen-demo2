@@ -1,12 +1,13 @@
 import React, { useRef } from 'react';
 import { useEffect } from 'react';
 import * as echarts from 'echarts';
-import { ECharts, EChartsOption } from 'echarts';
+import { ECharts } from 'echarts';
 import { appWidth } from './useInitSize';
+import { ECBasicOption } from 'echarts/types/dist/shared';
 
-const px = (size: number) => size / 2420 * appWidth
+export const px = (size: number) => size / 2420 * appWidth
 
-export const useCharts = (props: {options: EChartsOption}) => {
+export const useCharts = (props: {options: ECBasicOption}) => {
   const chartRef = useRef<HTMLDivElement>(null)
   const myChart = useRef<ECharts>()
   useEffect(() => {
