@@ -1,5 +1,5 @@
 import React, { ReactChild, useRef } from 'react';
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 
 const clientWidth = document.documentElement.clientWidth
 const clientHeight = document.documentElement.clientHeight
@@ -8,7 +8,7 @@ export const appHeight = appWidth / ( 16/ 9)
 
 export const useInitSize = () => {
   const contentRef = useRef<HTMLDivElement>(null)
-  useEffect(() => {
+  useLayoutEffect(() => {
     document.documentElement.style.fontSize = appWidth / 100 +  'px'
     contentRef.current!.style.width = appWidth + 'px'
     contentRef.current!.style.height = appHeight + 'px'
