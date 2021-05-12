@@ -12,37 +12,51 @@ export const useCharts = (props: {options: EChartsOption}) => {
   useEffect(() => {
     myChart.current = echarts.init(chartRef.current!)
     myChart.current?.setOption({
+      title: {show: false},
+      legend: {show: false},
       textStyle: {
         fontSize: px(12),
         color: '#79839e',
       },
       grid: {
         x: px(40),
-        y: 0,
-        x2: 0,
-        y2: px(40),
+        y: px(40),
+        x2: px(10),
+        y2: px(50),
       },
       xAxis: {
-        type: 'category',
-        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        data: ['兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区'],
+        axisTick: {show: false},
+        axisLine: {
+          lineStyle: {color: '#083B70'}
+        },
         axisLabel: {
           fontSize: px(12),
-        }
+          formatter(val: string) {
+            if (val.length > 2) {
+              const array = val.split('');
+              array.splice(2, 0, '\n');
+              return array.join('');
+            } else {
+              return val;
+            }
+          }
+        },
       },
       yAxis: {
-        type: 'value',
+        splitLine: {show: false},
+        axisLine: {
+          show: true,
+          lineStyle: {color: '#083B70'}
+        },
         axisLabel: {
           fontSize: px(12),
         }
       },
-      series: [{
-        data: [120, 200, 150, 80, 70, 110, 130],
-        type: 'bar'
-      }]
     })
   }, [])
   useEffect(() => {
-    // myChart.current?.setOption(props.options)
+    myChart.current?.setOption(props.options)
   }, [props.options])
   return <div style={{flex: 1, width: '100%'}} ref={chartRef} />
 }
