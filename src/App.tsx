@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss'
 import { useInitSize } from './hooks/useInitSize';
 import header from './assets/header.9d7a7634.png'
+import { Chart1 } from './pages/Chart1';
 
 function App() {
   const Wrapper = useInitSize()
@@ -16,6 +17,7 @@ function App() {
             <section className={'section section1'}>
               <div className="border section-chart section1-chart1">
                 <div className="section-title"><h2>案发派出所管辖统计</h2></div>
+                <Chart1 />
               </div>
               <div className="border section-chart section1-chart2">
                 <div className="section-title"><h2>案发派出所管辖统计</h2></div>
