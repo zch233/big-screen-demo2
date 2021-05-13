@@ -21,7 +21,7 @@ export const Chart8 = () => {
           style: {
             fill: '#33a4fa',
             text: '年龄段',
-            font: 'bold 26px sans-serif',
+            font: 'bold 1.6rem sans-serif',
           }
         }
       ],
