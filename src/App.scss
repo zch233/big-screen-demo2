@@ -93,10 +93,13 @@ body {background-color: #00020b;}
       &-chart1 {
         flex: 1;
         margin-bottom: px(14);
+        background-color: #000;
+        &-tips {font-size: px(12);padding-bottom: .4em;color: #aaa;}
       }
       &-chart2 {
         margin-top: px(14);
         height: px(363);
+        flex-shrink: 0;
       }
     }
     .section5 {
