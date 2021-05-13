@@ -15,6 +15,7 @@ import { Chart10 } from './pages/Chart10';
 import { Chart9 } from './pages/Chart9';
 import { Chart8 } from './pages/Chart8';
 import { Chart7 } from './pages/Chart7';
+import { Chart6 } from './pages/Chart6';
 
 function App() {
   const Wrapper = useInitSize()
@@ -53,6 +54,8 @@ function App() {
             <section className={'section section4'}>
               <div className="border section-chart section4-chart1">
                 <div className="section-title"><h2>全市犯罪人员籍贯分布地</h2></div>
+                <Chart6 />
+                <span className={'section4-chart1-tips'}>此地图仅显示了中国的部分区域</span>
               </div>
               <div className="border section-chart section4-chart2">
                 <div className="section-title"><h2>犯罪人员年龄段分布</h2></div>
